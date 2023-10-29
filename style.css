@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .transh3 {
+    border-bottom: 2px solid hsl(51, 100%, 49%);
+    width: max-content;
+  }
+  .standh3 {
+    border-bottom: 2px solid  hsl(7, 99%, 70%);
+    width: max-content;
+  }
+  h1, h3 {
+    font-family: 'Fraunces', serif;
+  }
+ p {
+  color:hsl(232, 10%, 55%);
+  font-family: 'Barlow', sans-serif;
+ }
+
+  header {
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  nav {
+    display: flex;
+    width: 98%;
+    padding: 1.5rem;
+  }
+  nav ul {
+    margin-left: auto;
+    margin-right: 1rem ;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  nav ul li {
+    letter-spacing: 1px;
+    margin-left: 1rem;
+  }
+  nav ul li:hover a {
+    background-color: whitesmoke; 
+    color: black;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: hsl(232, 10%, 55%);
+    padding: 8px;
+    border-radius: 10px;
+  }
+  #hamburgerimg {
+    display: none;
+  }
+  #bgimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .arrow {
+    width: 100%;
+    text-align: center;
+  }
+  .arrow img {
+    padding-top: 40px;
+  }
+  header h1 {
+    letter-spacing:5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+  .container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .container div {
+    height: 500px;
+  }
+  .container div img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .brand {
+    min-height: 60%;
+    width: 50%;
+    line-height: 1.5rem;
+    margin: 7rem auto 0 auto;
+     padding: 20px;
+     overflow: hidden;
+  }
+  .brand p, .brand h3  {
+    margin-top: 2rem;
+  }
+  .brand h1 {
+    line-height: 2rem;
+  }
+  .graphic, .photography {
+    height: 500px;
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+
+  }
+  .graphic p, .photography p {
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    width: 90%;
+  }
+  .graphic h1, .photography h1 {
+    margin-bottom: -2rem;
+  }
+  .graphic {
+    background: url("images/desktop/image-graphic-design.jpg");
+    color:  hsl(167, 40%, 24%);
+  }
+  .photography {
+    background: url("images/desktop/image-photography.jpg");
+    color: hsl(198, 62%, 26%);
+  }
+  .clients {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 4rem;
+  }
+  .clients h1 {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+  }
+  .section {
+    display: flex;
+
+  }
+  .section div {
+    width: 500px;
+    height: 300px;
+    padding-top: 3rem;
+    line-height: 1.5rem;
+  }
+  .section div h2 {
+    margin-top: 4rem;
+  }
+  .section img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .imgs-div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    overflow: hidden;
+  }
+  .imgs-div div {
+    height: 400px;
+  }
+  .imgs-div div img {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2rem;
+    color: hsl(168, 34%, 41%);
+  }
+  footer ul {
+    margin-top: 1rem;
+  }
+  footer ul li {
+    list-style: none;
+    display: inline;
+    margin: 1rem;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color:hsl(213, 9%, 39%);
+  }
+  .icons {
+    margin-top: 1rem;
+  }
+  .icons img {
+    margin: 0.8rem;
+  }
+      
+
+  @media(max-width:600px) {
+    nav ul{
+      flex-direction: column;
+      height: 0;
+      overflow: hidden;
+    }
+    header, nav {
+      width: auto;
+    }
+    nav ul li a:hover {
+      background-color: yellow;
+    }
+     /* this class added to ul tag from js onclick on hamburger menu */
+    nav .active  {
+       
+      height: auto;
+      width: 80%;
+      position: absolute;
+      top: 60px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      padding: 3rem 1rem 1rem 1rem;
+      line-height: 2.5rem;
+      clip-path: polygon(0 13%, 90% 13%, 100% 0, 100% 14%, 100% 100%, 45% 100%, 0 100%);
+       }
+
+      #hamburgerimg  {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+    .container {
+    grid-template-columns: auto;
+  }
+  .container .brand {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .clients {
+     padding: 4rem 1rem 0 1rem;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .section div {
+    width: auto;
+  }
+  .imgs-div {
+    grid-template-columns: 50% 50%;
+  }
+  .imgs-div div {
+    height: 200px;
+  }
+  }
