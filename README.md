@@ -1,1 +1,1 @@
-# Responsive-Landing-Page-Using-HTML-CSS-CSS-Grid-JS
+# Responsive-Landing-Page-Using-HTML-CSS-JS
